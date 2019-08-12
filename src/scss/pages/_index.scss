@@ -1,1 +1,52 @@
+.main-slide {
 
+    height: 100%;
+    display: flex;
+
+    &__wrapper {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__item {
+
+        min-height: 430px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_right {
+        
+            align-items: flex-end;
+        
+        }
+
+    }
+
+    &__text {
+
+        margin-top: 20px;
+        color: $color-default;
+        font-size: 18px;
+        line-height: 21px;
+
+        &_left {
+
+            text-align: left;
+
+        }
+
+        &_right {
+
+            text-align: right;
+
+        }
+
+    }
+
+}
