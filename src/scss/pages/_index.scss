@@ -21,9 +21,9 @@
         justify-content: space-between;
 
         &_right {
-        
+
             align-items: flex-end;
-        
+
         }
 
     }
@@ -46,6 +46,21 @@
             text-align: right;
 
         }
+
+    }
+
+    &__button {
+
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        max-width: 245px;
+        padding: 19px 67px;
+        box-sizing: border-box;
+        font-size: 28px;
+        line-height: 33px;
+        color: $color-default;
+        background-color: rgba(255, 255, 255, 0.2);
 
     }
 
