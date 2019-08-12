@@ -5,7 +5,7 @@ html.html(lang="ru")
 
     head
 
-        title myStartTemplate
+        title Эверест
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
@@ -16,17 +16,19 @@ html.html(lang="ru")
 
     body.body
 
-        include header.pug
+        .body__container
 
-        main.main
+            include header.pug
 
-            .main__wrapper
+            main.main
 
-                block content
+                .main__wrapper
 
-        include footer.pug
+                    block content
 
-        noscript У вас отключен JavaScript, пожалуйста, включите его для корректной работы сайта.
+            include footer.pug
 
-        block scripts
-            script(src="/js/main.js")
+            noscript У вас отключен JavaScript, пожалуйста, включите его для корректной работы сайта.
+
+            block scripts
+                script(src="/js/main.js")

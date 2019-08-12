@@ -1,0 +1,43 @@
+.logo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon > svg > path {
+
+        margin-bottom: 7px;
+        transition: fill .6s ease;
+
+    }
+
+    &__text {
+
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: bold;
+        color: $color-default;
+        transition: color .6s ease;
+        text-transform: uppercase;
+
+    }
+
+    &:hover {
+
+        .logo__text {
+
+            color: #153d65;
+            transition: color .6s ease;
+
+        }
+
+        .logo__icon > svg > path {
+
+            fill: #153d65;
+            transition: fill .6s ease;
+
+        }
+
+    }
+
+}
