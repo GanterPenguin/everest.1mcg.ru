@@ -1,10 +1,24 @@
-.main-slide {
+.main-slider {
 
+    overflow: hidden;
+    max-height: 700px;
     height: 100%;
-    display: flex;
 
     &__wrapper {
 
+        height: 100%;
+
+    }
+
+}
+
+.main-slide {
+
+    height: 100%;
+
+    &__wrapper {
+
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: space-between;

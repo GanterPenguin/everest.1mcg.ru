@@ -1,5 +1,7 @@
 'use strict';
 
+import Swiper from "swiper";
+
 let backgroundShadow = document.querySelector(".background-shadow");
 let slideButtonLeft = document.querySelector(".main-slide__button");
 let slideButtonRight = document.querySelector(".main-slide__button.main-slide__button_right");
@@ -19,6 +21,15 @@ slideButtonRight.addEventListener("mouseover", () => {
 slideButtonRight.addEventListener("mouseout", () => {
 	backgroundShadow.style.transform = 'translateX(100%)';
 });
+
+let mainSwiper = new Swiper(".main-slider", {
+    wrapperClass: "main-slider__wrapper",
+    slideClass: "main-slide",
+    direction: "vertical",
+    slidesPerView: 1,
+    mousewheel: true,
+});
+
 /*
  
 import yuor vue modules example
