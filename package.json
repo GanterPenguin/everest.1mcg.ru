@@ -6,8 +6,8 @@
     "author": "sharygin.n@yandex.ru",
     "license": "MIT",
     "scripts": {
-        "gulp": "NODE_ENV='development' gulp",
-        "gulp-prod": "NODE_ENV='production' gulp",
+        "gulp": "gulp",
+        "gulp-prod": "gulp",
         "test": "gulp test",
         "test-js": "eslint '.src/js'"
     },

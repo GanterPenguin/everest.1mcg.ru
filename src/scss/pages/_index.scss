@@ -62,6 +62,30 @@
         color: $color-default;
         background-color: rgba(255, 255, 255, 0.2);
 
+        &:hover .background-shadow {
+
+            .background-shadow {
+
+                transform: translateX(-50%);
+                transition: transform .6s ease;
+            }
+
+        }
+
+        &_right {
+
+            &:hover .background-shadow {
+
+                .background-shadow {
+
+                    transform: translateX(50%);
+                    transition: transform .6s ease;
+                }
+
+            }
+
+        }
+
     }
 
 }
