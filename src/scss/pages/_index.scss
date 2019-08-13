@@ -110,14 +110,14 @@
     box-sizing: border-box;
 
     &__wrapper {
-    
+
         @extend .main-slide__wrapper;
         flex-direction: column;
-    
+
     }
 
     &__grid {
-    
+
         padding-top: 70px;
         box-sizing: border-box;
         height: 100%;
@@ -125,21 +125,46 @@
         grid-template-rows: 50% 50%;
         grid-template-columns: 50% 50%;
         grid-gap: 20px;
-    
+
     }
 
     &__grid-item {
-    
+
+        display: flex;
+
+    }
+
+    &__icon-wrapper {
+
+        display: flex;
+        min-width: 60px;
+        height: 100%;
+
+    }
+
+    &__icon {
+
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+        background: url("/images/icons/services-1.svg") no-repeat center/contain;
+
+    }
+
+    &__text-wrapper {
+
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    
+
     }
 
     &__text {
-    
+
         @extend .main-slide__text;
-    
+        padding-right: 25px;
+        box-sizing: border-box;
+
     }
 
 }
