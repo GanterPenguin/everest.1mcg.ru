@@ -5,19 +5,17 @@
     cursor: pointer;
 
     &_main {
-    
+
         justify-content: center;
-        max-width: 245px;
+        background-color: $color-button;
         padding: 19px 67px;
-        box-sizing: border-box;
-        font-size: 28px;
+        max-width: 245px;
         line-height: 33px;
         color: $color-default;
-        background-color: rgba(255, 255, 255, 0.2);
+        font-size: 28px;
+        box-sizing: border-box;
 
-    
     }
-
 }
 
 // use BAM modifier
