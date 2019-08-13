@@ -8,44 +8,66 @@ block content
 
             .main-slider__wrapper
 
-                - for(let x = 0; x < 6; x++)
-                    .main-slide.main-slide_main
+                .main-slide
 
-                        .main-slide__wrapper
+                    .main-slide__wrapper
 
-                            .main-slide__item
+                        .main-slide__item
 
-                                .main-slide__item-wrapper
+                            .main-slide__item-wrapper
 
-                                    h2.title.title_left.title_h2 Сайты:
-                                    h2.title.title_left.title_h2 Скарлет и монарх
+                                h2.title.title_left.title_h2 Сайты:
+                                h2.title.title_left.title_h2 Скарлет и монарх
 
-                                    h3.title.title_left.title_h3 Система управления сайтом 
+                                h3.title.title_left.title_h3 Система управления сайтом 
 
-                                    .main-slide__text.main-slide__text_left Скарлетт и Монарх: Управление сайтом - это большое 
-                                        |количество программных модулей для решения задач любой 
-                                        |сложности от размещения текста до приема платежей.
+                                .main-slide__text.main-slide__text_left Скарлетт и Монарх: Управление сайтом - это большое 
+                                    |количество программных модулей для решения задач любой 
+                                    |сложности от размещения текста до приема платежей.
 
-                                .main-slide__button Перейти
+                            .main-slide__button Перейти
 
-                            .main-slide__item.main-slide__item_right
+                        .main-slide__item.main-slide__item_right
 
-                                .main-slide__item-wrapper
+                            .main-slide__item-wrapper
 
-                                    h2.title.title_right.title_h2 Интернет сервисы:
-                                    h2.title.title_right.title_h2 Эверест
+                                h2.title.title_right.title_h2 Интернет сервисы:
+                                h2.title.title_right.title_h2 Эверест
 
-                                    h3.title.title_right.title_h3 Система для решения отраслевых задач 
+                                h3.title.title_right.title_h3 Система для решения отраслевых задач 
 
-                                    .main-slide__text.main-slide__text_right Полная интеграция с программным обеспечением 1C:
-                                        |бухгалтерия с обменом по P2P протоколу. Формирование 
-                                        |файлов квитанций оплаты услуг водоснабжения и
-                                        |общедомовых  работ. Отправка показаний счётчиков в режиме
-                                        |онлайн.  Интеграция с сервисом Госуслуг и возможность
-                                        |обмена сообщениями с жильцами и администрацией.
-                                        |Онлайн оплата. 
+                                .main-slide__text.main-slide__text_right Полная интеграция с программным обеспечением 1C:
+                                    |бухгалтерия с обменом по P2P протоколу. Формирование 
+                                    |файлов квитанций оплаты услуг водоснабжения и
+                                    |общедомовых  работ. Отправка показаний счётчиков в режиме
+                                    |онлайн.  Интеграция с сервисом Госуслуг и возможность
+                                    |обмена сообщениями с жильцами и администрацией.
+                                    |Онлайн оплата. 
 
-                                .main-slide__button.main-slide__button_right Перейти
+                            .main-slide__button.main-slide__button_right Перейти
+
+                .main-slide.services-slide.services-slide_services
+
+                    .services-slide__wrapper
+
+                        h2.title.title_left.title_h2 Наши услуги
+
+                        .services-slide__grid
+
+                            - for(let x = 0; x < 4; x++)
+                                .services-slide__grid-item
+
+                                    h3.title.title_right.title_h3 Сайты-визитки
+
+                                    .services-slide__text По настоящему стильная 
+                                        |интернет-визитка — это лучший способ 
+                                        |подчеркнуть ваш статус и амбиции. С 
+                                        |нами интернет-визитка — это небольшой 
+                                        |сайт, который может многое. Данный 
+                                        |продукт станет для вас отличным 
+                                        |решением, если вы хотите представить 
+                                        |свою персону в сети наилучшим образом. 
+
 
 //- block append page-bottom
 //- script(src='./js/another-js.js')
