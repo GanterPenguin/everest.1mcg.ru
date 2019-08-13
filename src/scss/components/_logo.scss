@@ -9,6 +9,28 @@
         transition: fill .6s ease;
         margin-bottom: 7px;
 
+
+    }
+
+    &__icon {
+
+        width: 115px;
+        height: 93px;
+
+        @media screen and (max-width: 780px) {
+
+            width: 73px;
+            height: 60px;
+
+        }
+
+        @media screen and (max-height: 840px) {
+
+            width: 73px;
+            height: 60px;
+
+        }
+
     }
 
     &__text {
@@ -19,6 +41,20 @@
         color: $color-default;
         font-size: 25px;
         font-weight: bold;
+
+        @media screen and (max-width: 780px) {
+
+            line-height: 22px;
+            font-size: 19px;
+
+        }
+
+        @media screen and (max-height: 840px) {
+
+            line-height: 22px;
+            font-size: 19px;
+
+        }
 
     }
 
