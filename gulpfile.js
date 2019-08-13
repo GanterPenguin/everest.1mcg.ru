@@ -140,7 +140,7 @@ function watcher() {
 exports.watcher = watcher;
 
 
-exports.default = parallel(buildPug, buildScss, buildJs, buildImages, buildFonts, watcher, serve);
+exports.default = parallel(buildPug, buildScss, buildJs, buildImages, buildFonts,testPug, testScss, watcher, serve);
 exports.build = parallel(buildPug, buildScss, buildJs, buildImages, buildFonts);
 exports.test = series(testPug, testScss);
 

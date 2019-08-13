@@ -4,7 +4,9 @@ import Swiper from "swiper";
 
 let backgroundShadow = document.querySelector(".background-shadow");
 let slideButtonLeft = document.querySelector(".main-slide__button");
-let slideButtonRight = document.querySelector(".main-slide__button.main-slide__button_right");
+let slideButtonRight = document.querySelector(
+    ".main-slide__button.main-slide__button_right"
+);
 
 function showBackgroundLeft() {
     backgroundShadow.style.transform = 'translateX(-50%)';
@@ -22,10 +24,22 @@ function hideBackgroundRight() {
     backgroundShadow.style.transform = 'translateX(100%)';
 }
 function addButtonsListeners() {
-    slideButtonLeft.addEventListener("mouseover", showBackgroundLeft);
-    slideButtonLeft.addEventListener("mouseout", hideBackgroundLeft);
-    slideButtonRight.addEventListener("mouseover", showBackgroundRight);
-    slideButtonRight.addEventListener("mouseout", hideBackgroundRight);
+    slideButtonLeft.addEventListener(
+        "mouseover", 
+        showBackgroundLeft
+    );
+    slideButtonLeft.addEventListener(
+        "mouseout", 
+        hideBackgroundLeft
+    );
+    slideButtonRight.addEventListener(
+        "mouseover", 
+        showBackgroundRight
+    );
+    slideButtonRight.addEventListener(
+        "mouseout", 
+        hideBackgroundRight
+    );
 }
 
 addButtonsListeners();
@@ -35,15 +49,34 @@ let mainSwiper = new Swiper(".main-slider", {
     slideClass: "main-slide",
     direction: "vertical",
     slidesPerView: 1,
-    mousewheel: true,
+    mousewheel: {
+        forceToAxis: true,
+        releaseOnEdges: true,
+        invert: true
+    },
+    keyboard: true,
     on: {
         reachBeginning: () => {
             backgroundShadow.style.transform = 'translateX(-100%)';
+            slideButtonLeft.addEventListener(
+                "mouseout", 
+                hideBackgroundLeft
+            );
+            slideButtonRight.addEventListener(
+                "mouseout", 
+                hideBackgroundRight
+            );
         },
         slideNextTransitionStart: () => {
             backgroundShadow.style.transform = 'translateX(0%)';
-            slideButtonLeft.removeEventListener("mouseout", hideBackgroundLeft);
-            slideButtonRight.removeEventListener("mouseout", hideBackgroundRight);
+            slideButtonLeft.removeEventListener(
+                "mouseout", 
+                hideBackgroundLeft
+            );
+            slideButtonRight.removeEventListener(
+                "mouseout", 
+                hideBackgroundRight
+            );
         },
     },
 });
