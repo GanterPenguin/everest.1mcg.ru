@@ -12,6 +12,28 @@
 
     }
 
+    @media screen and (max-width: 556px) {
+
+        line-height: 15px;
+        font-size: 12px;
+
+    }
+
+    @media screen and (max-height: 540px) and (min-width: 756px) {
+
+        margin-top: 10px;
+        line-height: 17px;
+        font-size: 14px;
+
+    }
+
+    @media screen and (max-height: 380px) {
+
+        line-height: 12px;
+        font-size: 11px;
+
+    }
+
 }
 
 %slide-wrapper {
@@ -73,9 +95,23 @@
 
         }
 
-        @media screen and (max-height: 670px) {
+        @media screen and (max-width: 556px) {
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+        }
+
+        @media screen and (max-height: 670px), (max-width: 756px) {
 
             padding-top: 30px;
+
+        }
+
+        @media screen and (max-height: 450px), (max-width: 556px) {
+
+            padding-top: 10px;
 
         }
 
@@ -93,6 +129,12 @@
 
             align-items: flex-end;
 
+            @media screen and (max-width: 556px) {
+
+                align-items: flex-start;
+
+            }
+
         }
 
         @media screen and (max-width: 1280px) {
@@ -100,6 +142,39 @@
             width: 48%;
 
         }
+
+        @media screen and (max-width: 556px) {
+
+            margin-bottom: 20px;
+            width: 100%;
+            min-height: 190px;
+
+        }
+
+        @media screen and (max-height: 630px) and (min-width: 568px) {
+
+            min-height: 370px;
+
+        }
+
+        @media screen and (max-height: 540px) {
+
+            min-height: 290px;
+
+        }
+
+        @media screen and (max-height: 450px) {
+
+            min-height: 230px;
+
+        }
+
+    }
+
+    &__item-wrapper {
+
+        padding-bottom: 20px;
+        box-sizing: border-box;
 
     }
 
@@ -111,11 +186,23 @@
 
             text-align: left;
 
+            @media screen and (max-width: 556px) {
+
+                text-align: unset;
+
+            }
+
         }
 
         &_right {
 
             text-align: right;
+
+            @media screen and (max-width: 556px) {
+
+                text-align: unset;
+
+            }
 
         }
 
@@ -136,17 +223,25 @@
 
         @media screen and (max-width: 840px) {
 
-            max-width: 190px;
             padding: 10px 50px;
+            max-width: 190px;
             font: 20px / 25px sans-serif;
 
         }
 
         @media screen and (max-height: 840px) {
 
-            max-width: 190px;
             padding: 10px 50px;
+            max-width: 190px;
             font: 20px / 25px sans-serif;
+
+        }
+
+        @media screen and (max-height: 450px), (max-width: 756px) {
+
+            padding: 8px 30px;
+            max-width: 110px;
+            font: 14px / 16px sans-serif;
 
         }
     }

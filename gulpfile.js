@@ -131,8 +131,8 @@ function clear() {
 exports.clear = clear;
 
 function watcher() {
-    watch(`${dir.pug}**/*.pug`, series(buildPug, reload));
-    watch(`${dir.scss}**/*.scss`, series(buildScss, reload));
+    watch(`${dir.pug}**/*.pug`, series(buildPug, reload, testPug));
+    watch(`${dir.scss}**/*.scss`, series(buildScss, reload, testScss,));
     watch([`${dir.js}`, `${dir.vue}`], series(buildJs, reload));
     watch(`${dir.images}`, series(buildImages, reload));
     watch(`${dir.fonts}`, series(buildFonts, reload));
@@ -140,7 +140,7 @@ function watcher() {
 exports.watcher = watcher;
 
 
-exports.default = parallel(buildPug, buildScss, buildJs, buildImages, buildFonts,testPug, testScss, watcher, serve);
+exports.default = parallel(buildPug, buildScss, buildJs, buildImages, buildFonts, watcher, serve);
 exports.build = parallel(buildPug, buildScss, buildJs, buildImages, buildFonts);
 exports.test = series(testPug, testScss);
 
