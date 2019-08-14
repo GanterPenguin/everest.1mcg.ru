@@ -25,6 +25,12 @@
             box-sizing: border-box;
 
         }
+
+        @media screen and (max-width: 756px) {
+
+            flex-direction: row-reverse;
+
+        }
     }
 
     @media screen and (max-height: 630px), (max-width: 756px) {

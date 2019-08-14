@@ -151,12 +151,6 @@
 
         }
 
-        @media screen and (max-height: 630px) and (min-width: 568px) {
-
-            min-height: 370px;
-
-        }
-
         @media screen and (max-height: 540px) {
 
             min-height: 290px;
@@ -168,6 +162,21 @@
             min-height: 230px;
 
         }
+
+        @media screen and (max-height: 630px) and (min-width: 568px) {
+
+            min-height: 370px;
+
+        }
+
+        @media screen and (max-width: 600px) and (max-height: 400px) {
+
+            margin-bottom: 20px;
+            width: 100%;
+            min-height: 190px;
+
+        }
+
 
     }
 

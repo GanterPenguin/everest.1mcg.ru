@@ -50,7 +50,7 @@
         }
 
 
-        @media screen and (max-height: 540px) and (max-width: 756px) {
+        @media screen and (max-height: 540px) and (max-width: 756px) and (min-width: 400px) {
 
             line-height: 28px;
             font-size: 25px;
