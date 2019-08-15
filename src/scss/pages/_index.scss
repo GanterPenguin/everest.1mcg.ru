@@ -27,7 +27,7 @@
 
     }
 
-    @media screen and (max-height: 380px) {
+    @media screen and (max-height: 480px) {
 
         line-height: 12px;
         font-size: 11px;
@@ -163,7 +163,7 @@
 
         }
 
-        @media screen and (max-height: 630px) and (min-width: 568px) {
+        @media screen and (min-height: 630px) and (min-width: 768px) {
 
             min-height: 370px;
 
