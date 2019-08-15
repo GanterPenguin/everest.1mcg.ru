@@ -112,7 +112,7 @@ function serve(cb) {
     browserSync.init({
         server: "./public",
         port: 8080,
-        host: "0.0.0.0"
+        host: "0.0.0.0",
     }, cb);
 }
 exports.serve = serve;

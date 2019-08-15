@@ -1,5 +1,7 @@
 "use strict";
 
+import screenfull from "screenfull";
+
 let menuToggler = document.querySelector(".menu-toggler");
 
 let menu = document.querySelector(".menu");
@@ -13,9 +15,4 @@ menuToggler.addEventListener("click", () => {
 
 });
 
-window.addEventListener("load",function() {
-    setTimeout(function(){
-        // This hides the address bar:
-        window.scrollTo(0, 1);
-    }, 0);
-});
+screenfull.request();
