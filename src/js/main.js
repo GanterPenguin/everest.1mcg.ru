@@ -48,6 +48,7 @@ let mainSwiper = new Swiper(".main-slider", {
     wrapperClass: "main-slider__wrapper",
     slideClass: "main-slide",
     direction: "vertical",
+    autoHeight: true,
     slidesPerView: 1,
     mousewheel: {
         forceToAxis: true,
@@ -80,6 +81,11 @@ let mainSwiper = new Swiper(".main-slider", {
         },
     },
 });
+
+// let scroll = new Swiper('.swiper-container', {
+//     slidesPerView: 1,
+//     slidesPerColumn: 2,
+// });
 
 /*
 

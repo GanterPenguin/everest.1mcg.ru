@@ -15,4 +15,8 @@ menuToggler.addEventListener("click", () => {
 
 });
 
-screenfull.request();
+let test = document.querySelector(".test");
+
+test.addEventListener("click", () => {
+    screenfull.toggle();
+});
