@@ -9,11 +9,11 @@ let slideButtonRight = document.querySelector(
 );
 
 function showBackgroundLeft() {
-    backgroundShadow.style.transform = 'translateX(-50%)';
+    backgroundShadow.style.transform = 'translateX(0%)';
 }
 
 function showBackgroundRight() {
-    backgroundShadow.style.transform = 'translateX(50%)';
+    backgroundShadow.style.transform = 'translateX(100%)';
 }
 
 function hideBackgroundLeft() {
@@ -21,7 +21,7 @@ function hideBackgroundLeft() {
 }
 
 function hideBackgroundRight() {
-    backgroundShadow.style.transform = 'translateX(100%)';
+    backgroundShadow.style.transform = 'translateX(-100%)';
 }
 function addButtonsListeners() {
     slideButtonLeft.addEventListener(
@@ -59,6 +59,7 @@ let mainSwiper = new Swiper(".main-slider", {
     on: {
         reachBeginning: () => {
             backgroundShadow.style.transform = 'translateX(-100%)';
+            backgroundShadow.style.width = '50%';
             slideButtonLeft.addEventListener(
                 "mouseout", 
                 hideBackgroundLeft
@@ -79,6 +80,9 @@ let mainSwiper = new Swiper(".main-slider", {
                 hideBackgroundRight
             );
         },
+        slideNextTransitionEnd: () => {
+            backgroundShadow.style.width = '100%';
+        }
     },
 });
 
